@@ -49,12 +49,12 @@ console.log(dog["color"])
 
 //Code here
 let favoriteThings = {
-  "band":"Pantera",
-  "food":"Clam Chowder",
-  "person":"mom",
-  "book":"Matilda",
-  "movie":"Bill and Ted's excellent Adventure",
-  "holiday":"Guy Fawkes Day"
+  band:"Pantera",
+  food:"Clam Chowder",
+  person:"mom",
+  book:"Matilda",
+  movie:"Bill and Ted's excellent Adventure",
+  holiday:"Guy Fawkes Day"
 };
 
 /*
@@ -91,15 +91,17 @@ var carDetails = {
 */
 
 //Code Here
-const{color,make,model,year} = carDetails;
+const{color:myColor,make:myMake,model:myModel,year:myYear} = carDetails;
+console.log(myColor,myMake,myModel,myYear)
+//const{color,make,model,year} = carDetails;
 // console.log(color,make,model,year)
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
-// let person = {
-//   "title":"CEO",
-//   "firstName":"Bill",
-//   "lastName":"Gates"
-// }
+let person = {
+  title:"CEO",
+  firstName:"Bill",
+  lastName:"Gates"
+}
 /*
   In the function below named greeting, it is receiving an object as a parameter. 
   Use object destructuring to save the object properties to new variables. 
@@ -113,13 +115,13 @@ function greeting( obj ) {
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
 }
-// console.log(greeting(person));
+ console.log(greeting(person));
 //////////////////////////// PROBLEM 8 ////////////////////////////
 let population = {
-  "utah":3271616,
-  "california":37253956,
-  "texas":29183290,
-  "arizona":6828065
+  utah:3271616,
+  california:37253956,
+  texas:29183290,
+  arizona:6828065
 }
 /*
   Write a function called totalPopulation that will take in an object.
@@ -204,7 +206,7 @@ class Cat {
   }
 }
 let cat = new Cat("Sunshine",3,"black")
-console.log(cat.name)let testStr = "freeCodeCamp";
+console.log(cat.name)
 
 //////////////////////////// PROBLEM 13 ////////////////////////////
 /*
@@ -225,7 +227,7 @@ class Wizard{
     console.log(`${this.name} has cast ${this.favoriteSpell}`)
   }
 }
-let wiz = new Wizard("Harry Potter",13,"Avadacadavra!")let testStr = "freeCodeCamp";
+let wiz = new Wizard("Harry Potter",13,"Avadacadavra!")
 wiz.castSpell();
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
