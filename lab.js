@@ -147,18 +147,24 @@ console.log(totalPopulation(population));
   Use object destructuring to save the property values to new variables. 
   Push these new variables to an array and return the array. 
 */
-
+let nutrition ={
+  carb:"3g",
+  fat:"5g",
+  protein:"50g"
+}
 //Code Here
 function ingredients(obj){
-  out = []
+  let out = []
+  // for(key in obj){
+  //   out.push(obj[key])
+  // }
   const {carb,fat,protein} = obj
   out.push(carb)
   out.push(fat)
   out.push(protein)
   return out;
 }
-
-
+console.log(ingredients(nutrition))
 //////////////////////////// PROBLEM 10 ////////////////////////////
 // Do not edit the code below.
 var user = {
@@ -284,8 +290,7 @@ class Phone{
 
 //Code Here
 let iphone = new Phone("apple","iphone13","32GB","rose gold","$1000")
-let pixel = new Phone("google","5","64GB","Black","$500")
-let galaxy = new Phone("samsung","galaxy note 5","128GB","$700")
+gitlet galaxy = new Phone("samsung","galaxy note 5","128GB","$700")
 /* 
   Call the changePrice function on one of your phones, 
   don't forget to pass in a new price 
