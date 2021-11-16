@@ -20,10 +20,10 @@ let me = {
 
 //Code here
 let dog = {
-  "name":"Rover",
-  "color":"brown",
-  "age":3,
-  "goodBoy":false
+  name:"Rover",
+  color:"brown",
+  age:3,
+  goodBoy:false
 };
 
 
